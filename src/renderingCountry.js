@@ -5,7 +5,6 @@ function renderingCountry(arrayOfObjects) {
     Notiflix.Notify.info(
       'Too many matches found. Please enter a more specific name.'
     );
-    arrayOfObjects = [];
   }
   if (arrayOfObjects.length > 1 || arrayOfObjects.length <= 10) {
     let result = arrayOfObjects.map(

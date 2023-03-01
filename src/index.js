@@ -13,8 +13,7 @@ refs.input.addEventListener(
 function generationCountry(e) {
   let countryName = e.target.value;
   let countryNameFixed = countryName.toLowerCase().trim();
-  if (countryNameFixed === '') {
-    const containerInfo = document.querySelector('.container-info');
+  if (!countryNameFixed) {
     refs.countryList.innerHTML = '';
     refs.countryInfo.innerHTML = '';
     return;
